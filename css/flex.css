@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+ /* עיצוב הכותרת */
+.pquote {
+  font-size: 26px;
+  padding: 13px; /*  מרחק בין הכותרת הראשית לפסקה*/
+  text-align: center;
+  padding-top: 4rem ;
+  font-style: italic;
+}
+/* עיצוב של האות הראשונה */
+.pquote p:first-letter {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+ /* עיצוב שם המצוטט */
+.pquote span {
+  color: grey;
+  font-size: 21px;
+}
+
+
+h2{
+  text-align: center; 
+}
+
+ /* עיצוב איזור התמונות */
+.img-area{
+  display: flex;  /* גלריית פלקס */
+  flex-wrap: wrap;
+  justify-content: center; /* תוכן ממורכז */
+  margin: 30px auto;
+  width: 75%;
+  border: 1px solid lightgray;
+  box-shadow: 0 10px 20px rgb(0 0 0); /* אפקט הצללה לגלרייה */
+  padding-bottom: 30px; /*מרווח למטה */
+  background-color: white;
+}
+
+ /* עיצוב העמודות */
+.col {
+  flex-basis: 50%; /* כל עמודה תופסת  50% מרוחב הקונטיינר  */
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.single-img{
+  margin-bottom: 1rem;
+  position: relative; /* כדי שיראו את הכיתוב כשיש hover */
+  margin: 0;
+  padding: 10px;  /* מרווח בין התמונות */
+  width: 100%; /* כל תמונה תתפוס את כל רוחב העמודה */
+  height: auto;
+}
+
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* עיצוב הכיתוב על התמונות*/
+.text{
+  position: absolute; /* מיקום אבסולוטי כדי שיראו את הכיתוב בהאבר  */
+  top: 0;
+  left: 0;
+  width: 100%;  /* מרכוז הכיתוב */
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0);
+  display: flex; /* למקם אותם באמצע */
+  justify-content: center; /* מיקום משמאל לאמצע */
+  align-items: center; /* מיקום מלמעלה לאמצע */
+}
+
+/* hover */
+.text:hover {
+  background-color: rgba(238, 238, 238, 0.5); /*רקע אפור*/
+  color: rgb(255, 255, 255); /* צבע כיתוב לבן*/
+  margin-top: 0;
+  opacity: 0.5;
+  transition: 0.7s;
+  font-style: italic;
+}

@@ -1,0 +1,37 @@
+
+h1{
+  margin: 0.6rem;
+  color: rgb(255, 255, 255);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin-top: 5em;
+}
+/* אתחול תמונת הרקע הכחולה */
+.background{
+  background-image: url(https://images.squarespace-cdn.com/content/v1/59523d5c4c8b031b6d9dcb5b/1577903615672-3DOWYXABGNOWIQ0ZVEOG/_S6A1420-Edit-Edit.jpg?format=2500w);
+  background-color: blue; /*צבע רקע כחול לתמונה */
+  padding-bottom: 200px; /* הגדלת המרווח של התמונה למטה ולמעלה */
+  padding-top: 200px;
+  background-size: cover;
+  color: white;
+  background-blend-mode: multiply; /*מערבב בין התמונה לבין הצבע הכחול */
+  margin-bottom: 5rem;
+  font-style: italic;
+}
+
+.background h2, p{
+  padding-left: 3rem; /*מרווח משול הדף */
+}
+
+p,h3{
+  padding-left: 3rem;
+}
+
+.ex{
+  padding-left: 3rem;
+}
+

@@ -1,0 +1,116 @@
+.container {
+  width: 75%;
+  margin: 30px auto;
+  display: grid; /* הצגת גלרייה גריד */
+  grid-template-columns: repeat(6 , 1fr); /* חילוק כל שורה בקונטיינר ל 6 חלקים שווים */
+  border: 1px solid lightgray;
+  box-shadow: 0 10px 20px rgb(0 0 0); /* אפקט הצללה לגלרייה */
+  background-color: white;
+  margin-bottom: 5rem;
+}
+
+/* עיצוב הכותרת הראשית */
+h2{
+  text-align: center; /* מרכוז */
+  margin-bottom: 3rem;
+  background-image: url(images/house.jpg); /* תמונת רקע לכותרת */
+  background-color: greenyellow; 
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-blend-mode: multiply; /* ערבוב תמונת הרקע עם הצבע greenyellow */
+  color: white;
+  background-size: cover; /* תמונת הרקע תכסה את כל הרקע */
+}
+
+figure {
+  margin: 0.65rem;
+  position: relative; /* כדי שבהאבר יראו את הכיתוב על התמונה */
+}
+
+/* עיצוב מיקום כל תמונה */
+/*למשל תמונה ראשונה בשורה 1 מתפרסת על שתי עמודות*/
+/* תמונה שנייה מעמודה 3 עד עמודה 6 וכן הלאה */
+figure:nth-of-type(1) {
+  grid-column: 1 / span 2;
+
+}
+figure:nth-of-type(2) {
+  grid-column: 3 / span 4;
+}
+
+figure:nth-of-type(3) {
+  grid-column: 1 / span 3;
+}
+
+figure:nth-of-type(4) {
+  grid-column: 4 / span 3;
+}
+
+figure:nth-of-type(5) {
+  grid-column: 1 / span 6;
+}
+
+figure:nth-of-type(6) {
+  grid-column: 1 / span 3;
+}
+
+figure:nth-of-type(7) {
+  grid-column: 4 / span 3;
+}
+
+figure:nth-of-type(8) {
+  grid-column: 1 / span 2;
+}
+
+figure:nth-of-type(9) {
+  grid-column: 3 / span 2;
+}
+
+figure:nth-of-type(10) {
+  grid-column: 5 / span 2;
+}
+
+figure:nth-of-type(11) {
+  grid-column: 1 / span 4;
+}
+
+figure:nth-of-type(12) {
+  grid-column: 5 / span 2;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+figure p {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 20px;
+  position: absolute; /* מיקום באמצע */
+  font-weight: bold;
+}
+
+.text {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  color: rgba(240, 248, 255, 0);
+  text-align: center; /* מיקום באמצע */
+  font-weight: bold;
+  display: grid; /* למקם את הכיתוב באמצע */
+  align-items: center; /* מיקום מלמעלה לאמצע */
+  font-style: italic;
+  font-size: 20px;
+}
+
+.text:hover {
+  background-color: rgba(238, 238, 238, 0.5);
+  color: rgb(255, 255, 255);
+  transition: 0.7s;
+  margin-top: 0;
+  opacity: 0.5; 
+}

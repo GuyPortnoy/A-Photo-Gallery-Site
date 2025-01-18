@@ -1,0 +1,76 @@
+/*יצירת הגדרות קופסה*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/*כיצוב כללי של גוף הדף*/
+body{
+  font-family: system-ui; 
+  margin: 0;
+  padding: 0; /*מרווח לגוף*/
+  border: 0;
+}
+
+
+/*עיצוב כללי של החלק הראשי*/
+main{
+  padding: 30px 0; /*מרווח בין החלק הראשי לראש הגוף*/
+  background-color: #d4d4d4;
+}
+
+/*עיצוב כללי של ראש הגוף*/
+header{
+  width: 100%;
+  text-align: center; /*מרכוז טקסט*/
+  margin-top: 0px auto;
+  padding-top: 8px; /*מרווח מלמלעה*/
+  font-size: 0.75rem;
+  background-color: rgb(0, 0, 0);
+  position: sticky; /*הגדרת ראש הדף כך שייזוז אם הזזת הדף*/
+  top: 0;
+  z-index: 2;
+}
+
+/*עיצוב כללי של הכותרת הראשית*/
+h1{
+  margin: 0.6rem;
+  color: rgb(255, 255, 255);
+}
+
+/*עיצוב כללי של הניווט*/
+nav{
+  min-height: 2rem; /*גובה מינמלי*/
+  font-size: 1.0em;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly; /*מרחק שווה בין נווטים*/
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+/*עיצוב של כל  נווט*/
+header a{
+  padding: 10px; /*מרווח לכל נווט*/
+  margin: 5px 3px;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none; /*טקסט פשוט*/
+}
+
+/*הגדרת ריחוף עכבר על הנווט*/
+nav :hover{
+  transition: 0.5s;
+  color: aqua;
+}
+
+/*עיצוב כללי של רגל הדף*/
+footer {
+  padding: 15px 15px; /*רווח לרגל הדף*/
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  text-align: center; /*מרכוז הטקסט*/
+  display: block;
+}

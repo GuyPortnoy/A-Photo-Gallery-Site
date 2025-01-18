@@ -1,0 +1,112 @@
+/*עיצוב מיכל*/
+.container {
+  width: 75%;
+  margin: 0px auto;
+  border: 1px solid lightgray;
+  box-shadow: 0 10px 20px rgb(0 0 0); /* אפקט הצללה */
+  background-color: #ffffff;
+  margin-bottom: 4rem;
+}
+
+/*עיצוב של מזגרת*/
+fieldset{
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+}
+
+/*עיצוב שורת תופס*/
+.form-row{
+  display: flex;
+  width: 100%;
+  margin: 0.3rem 0 1.5rem;
+  padding: 0 0.3rem; /*מרווח בין שורות התופס לגבול המזגרת*/
+  justify-content: flex-start; /* תוכן ממורכז */
+  align-items: center; /*מירכוז עצמים*/
+  gap: 1rem; /*יצירת רבח בין שורות התופס */
+}
+
+.form-row-checkbox{
+  display: flex;
+  width: 20%;
+  margin: 0.3rem 0 1.5rem;
+  padding: 0 0.3rem;
+  justify-content: flex-start; /* תוכן ממורכז */
+  align-items: center; /*מירכוז עצמים*/
+  gap: 1rem; /*יצירת רבח בין שורות התופס */
+
+}
+
+/*עיצוב של תיבת סימון*/
+.form-desin input{
+    display: inline-block;
+    width:fit-content;
+    padding: 6px 5px; /*מרווח בין התיבות לטקסט והגבול*/
+    margin: 5px 0;
+}
+
+/*עיצוב של תיבת סימון מסוג מספר*/
+.form-desin input[type=number]{
+    display: inline-block;
+    width: 6ch;
+    padding: 6px 5px; /*מרווח בין התיבות לטקסט והגבול*/
+    margin: 5px 0;
+}
+
+/*עיצוב התופס*/
+.form-desin{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px 70px; /*מרווח בין התופס למיכל*/
+    text-align: left; /*מיקום הטקסט שמאלה*/
+    background-color: #2e2d2d;
+    border-radius: 7px; /*יצארת זווית לקצבות התופס*/
+    color: #bfbaba;
+}
+
+/*עיצוב כפתורי התופס*/
+.form-desin button{
+    font-weight: bolder; /*יצירת תקסט מודגש*/
+    padding: 10px 22px; /*מרווח משני הצדדים של הכפתורים*/
+    border: none;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+/*עיצוב כפתור אישור קנייה*/
+.sub{
+  background-color: #309ef1;
+  color: #ffffff;
+}
+
+/*עיצוב קפתור ההיתחול*/
+.red{
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+}
+
+/*עיצוב ההייקונים של הקישורים*/
+img{
+  display: block;
+  height: 1.8rem;
+  margin: 0 auto;
+  padding-bottom: 0.5%;/*מרווח למטה */
+}
+
+/*עיצוב מיקום ההייקונים*/
+.social{
+    display: flex;
+    width: 20%;
+    margin: 0.5rem auto;
+    justify-content: center; /*מירכוז התוכן*/
+    align-items: center; /*מירכוז ההייקונים*/
+    gap: 1rem;/*יתירת רווך בין ההייקונים*/
+}
+
+/*עיצוב הכותרת להייקונים*/
+h3{
+  text-align: center;/*מירכוז הטקסט*/
+  font-style: oblique;
+  font-weight: bold;/*יצירת תקסט מודגש*/
+  font-size: 1.5rem;
+}
+

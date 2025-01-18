@@ -1,0 +1,57 @@
+/*עיצוב מיכל*/
+.container {
+  width: 75%;
+  margin: 30px auto;
+  border: 1px solid lightgray;
+  box-shadow: 0 10px 20px rgb(0 0 0); /* אפקט הצללה */
+  background-color: white;
+  min-width: 562px;
+}
+
+/*עיצוב כותרת מעל לטבלה*/
+h2{
+  text-align: center; /*מירכוז הטקסט*/ 
+  padding-top: 4%; /*מרווח מלמלעה*/
+  padding-bottom: 4%; /*מרווח מלמטה*/
+  font-size: x-large;
+  background-color:rgb(91, 36, 241);
+}
+
+/* עיצוב של הטבלה*/
+table  {  
+    border-collapse: collapse; /*יצירת גבולות */
+    text-align: center; /*מירכוז הטקסט*/ 
+    margin: 20px auto;
+    width: 80%;
+   
+}
+
+/*עיצוב העמודות והשורות*/
+td, th { 
+    width: 20%;
+    vertical-align: middle;
+    border: 3px solid rgb(41, 1, 114);
+    padding: 1.8% 55px; /*מרווח בשורות למעלה ולמטה*/
+    background-color: rgb(67, 117, 252);
+    opacity: 0.8; /*עימעום צבע הרקע*/
+}
+
+/*עיצוב העמודה הראשונה*/
+.first-cols {
+    width: 60%;
+}
+
+/*עיצוב ראש הטבלה*/
+.tableh {
+  background-color: rgb(25, 0, 255);
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media only screen and (max-width:850px){
+  body{
+    font-size: 10px;
+  }
+  .tableh{
+    font-size: 14px;
+  }
+}
