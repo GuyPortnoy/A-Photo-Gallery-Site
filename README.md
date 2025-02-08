@@ -15,14 +15,14 @@
 # 2.Open the index.html file in a web browser.
 # Folder Structure
 # photo-gallery-site/
-├── index.html       # Main HTML file
-├── flax.html        # A flax order HTML file
-├── grid.html        # A grid order HTML file
-├── table.html       # A table of statistic HTNL file
-├── purch.html       # A purchas HTML file
-├── css              # Stylesheet for the gallery
-├── images           # Folder containing all gallery images
-└── README.md        # Project documentation
+# ├── index.html       # Main HTML file
+# ├── flax.html        # A flax order HTML file
+# ├── grid.html        # A grid order HTML file
+# ├── table.html       # A table of statistic HTNL file
+# ├── purch.html       # A purchas HTML file
+# ├── css              # Stylesheet for the gallery
+# ├── images           # Folder containing all gallery images
+# └── README.md        # Project documentation
 # Customization
 # To add more images, place them inside the images/ folder and update index.html accordingly.
 # Modify style.css to change the layout, colors, or hover effects.
